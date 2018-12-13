@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Zachary Lloyd</title>
+  {% load staticfiles %}
+  <link rel = 'stylesheet' href="{% static 'css/bootstrap.min.css' %}" type="text/css" />
+</head>
+<body>
+    <div align="center">
+      <h1>Zachary Lloyd</h1>
+      <p style="padding-bottom: 4em;">
+        This blog will be about.....
+      </p>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

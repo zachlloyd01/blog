@@ -1,0 +1,33 @@
+{% extends "personal/header.html" %}
+<div >
+	{% block content %}
+		{% for post in object_list %}
+			<div align="center">
+				<h4 align="center">{{ post.image }}<a href="/blog/{{post.id}}">  {{ post.title }} </a>{{ post.date|date:"m/d/Y" }}<br /><br /> {{ post.preview }}</h4>
+			</div>
+			{% endfor %}
+			<style>
+				a {
+					color: red;
+				}
+				::Selection {
+					background-color: red;
+					color: white;
+				}
+
+				h4 {
+					padding-top: .65em;
+					padding-bottom: .65em;
+					border: 2px;
+					border-style: solid;
+					border-color: #c0c0c0;
+					border-radius: 50px;
+					width: 50em;
+				}
+
+				a:highlight {
+					color: grey;
+				}
+			</style>
+	{% endblock %}
+</div>
