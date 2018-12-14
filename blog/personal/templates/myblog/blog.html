@@ -3,7 +3,7 @@
 	{% block content %}
 		{% for post in object_list %}
 			<div align="center">
-				<h4 align="center">{{ post.image }}<a href="/blog/{{post.id}}">  {{ post.title }} </a>{{ post.date|date:"m/d/Y" }}<br /><br /> {{ post.preview }}</h4>
+				<h4 align="center"><img src = "{{ post.image.url }}" /><a href="/blog/{{post.id}}">  {{ post.title }} </a>{{ post.date|date:"m/d/Y" }}<br /><br /> {{ post.preview }}</h4>
 			</div>
 			{% endfor %}
 			<style>
