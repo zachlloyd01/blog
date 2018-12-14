@@ -13,6 +13,37 @@
         This blog will be about.....
       </p>
     </div>
+    <div class="navigation">
+      <ul class="navlist">
+        <li><span>
+          <a href="http://zachlloyd01.pythonanywhere.com/">Home</a>
+        </span></li>
+        <li><span>
+          <a href="http://zachlloyd01.github.io" target="_blank">My website!</a>
+        </span></li>
+        <li class="last"><span>
+          <a href="">Contact Me</a>
+        </span></li>
+      </ul>
+    </div>
+    <style>
+      .navigation {
+        border: 2px;
+        border-style: solid;
+        border-color: red;
+        width: 15em;
+        margin-left: 2.5em;
+        position: fixed;
+        background-color: #e6e6e6;
+      }
+      .navlist li {
+        padding-bottom: 1em;
+        list-style-type: none;
+      }
+      .last {
+        padding-bottom: 0em;
+      }
+    </style>
     {% block content %}
     {% endblock %}
 </body>
